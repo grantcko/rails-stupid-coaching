@@ -1,0 +1,11 @@
+<div class="container">
+  <h1 class="my-4 text-center"><strong>ANSWER</strong></h1>
+  <% name = params[:name] %>
+  <% if name.downcase == "i am going to work" %>
+    <p class="text-center"><%= "Great!" %></p>
+  <% elsif name.include?("?") %>
+    <p class="text-center"><%= "Silly question, get dressed and go to work!" %></p>
+  <% else %>
+    <p class="text-center"><%= "I don't care, get dressed and go to work!" %></p>
+  <% end %>
+</div>
